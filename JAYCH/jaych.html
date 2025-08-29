@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Donation Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://tse4.mm.bing.net/th/id/OIP.SkE9Jow0w1VbSNYRs6RrAAHaF-?rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #00ffff;
+    }
+
+    h2 {
+      color: #ffcc00;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .image-box {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-box img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .donate-button {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.donate-button:hover {
+  background-color: #0056b3;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💙 Support Healthcare 🚑</h1>
+    <h2>Donate to Hospital 🏨 Development & Patient Care</h2>
+
+    <div class="image-box">
+      <img src="https://tse1.explicit.bing.net/th/id/OIP.IXP6Rom5fvMzX_124C8EDAHaFV?rs=1&pid=ImgDetMain&o=7&rm=3" alt="saving life img" />
+    </div>
+
+    <form action="submit_form.php" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="amount">Donation Amount (INR):</label>
+      <input type="number" id="amount" name="amount" min="1" required />
+
+      <label for="message">Message or Wishes:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment">
+        <option value="upi">UPI</option>
+        <option value="bank">Bank Transfer</option>
+        <option value="cash">Cash</option>
+      </select>
+
+     
+      <a href="https://www.helpageindia.org/donate?msclkid=697e1240e1c817e5d64b7af1f6161e0c" target="_blank" class="donate-button">Donate Now</a>
+      <a href=""
+    </form>
+  </div>
+</body>
+</html>
